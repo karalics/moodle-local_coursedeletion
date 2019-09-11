@@ -1,28 +1,4 @@
 <?php
-// This file is part of local/coursedeletion
-//
-// Moodle is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// Moodle is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
-/**
- * @package local/coursedeletion
- * @copyright 2014-2018 Liip AG <https://www.liip.ch/>
- * @author Brian King <brian.king@liip.ch>
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
-defined('MOODLE_INTERNAL') || die();
-
 $string['pluginname'] = 'Automatisiertes Kurslöschen';
 $string['coursedeletion'] = 'Automatisiertes Kurslöschen';
 $string['settings'] = $string['pluginname'];
@@ -30,32 +6,33 @@ $string['settings'] = $string['pluginname'];
 $string['coursedeletion:course_autodelete_settings'] = 'Automatisiertes Kurslöschen: Einstellungen für Kurs anpassen';
 $string['workflow_task_name'] = 'Tägliche Workflow';
 
-// Course settings.
+// course settings:
 $string['coursedeletionsettings'] = 'Kurs löschen';
 $string['coursedeletionsettingsheader'] = 'Kurs löschen - Einstellungen';
 $string['enddate'] = 'Verfalldatum';
 $string['enddate_help'] = 'Drei Wochen vor diesem Datum wird eine Erinnerung an die Kursraum-Verantwortlichen geschickt. Am Verfalldatum wird der Kurs in den Papierkorb verschoben und für Studierende unsichtbar gemacht. Drei Monate nach diesem Datum wird der Kurs unwiderruflich gelöscht.';
 $string['scheduledeletion'] = 'Kurs nach Verfalldatum löschen';
 $string['scheduledeletion_help'] = 'Hier kann der Löschprozess gestoppt oder gestartet werden.';
+$string['settingssaved'] = 'Einstellungen wurden gespeichert';
 
-// Events.
+// events:
 $string['course_delete'] = 'Kurs löschen';
 $string['course_delete_error'] = 'Fehler beim Löschen der Kurs';
 $string['workflow_notify'] = 'Notification auslösen';
 $string['workflow_notify_error'] = 'Fehler beim Auslösen der Notification';
 $string['settings_update'] = 'Einstellungen ändern';
 
-// Errors.
+// errors:
 $string['enddatemustbeinfuture'] = 'Verfalldatum muss heute oder später sein.';
 
-// Messages.
+// messages:
 $string['deletion_not_scheduled'] = 'Automatisiertes Löschen des Kurses ist zur Zeit nicht festgelegt';
 $string['minimum_date_was_forced'] = 'Das Enddatum wurde automatisch auf das nächst mögliche Datum gesetzt.';
 $string['scheduled_upcoming_events'] = 'Ablauf-Erinnerungsmail: {$a->maildate}<br/>Kurs wird in den Papierkorb verschoben: {$a->stagedate}<br/>Kurs wird gelöscht: {$a->deletiondate}';
 $string['already_sent'] = 'Schon versandt';
 $string['mail_sent'] = 'Eine E-mail mit den aktualisierten Daten wurde an die Kursraum-Verantwortlichen geschickt';
 
-// Notification mails.
+// notification mails
 $string['mailfrom_address'] = 'Mail Von: Adresse';
 $string['mailfrom_address_desc'] = 'Email-Adresse zu verwenden für geschickte E-mails.  Wenn leer, die Adresse der Hauptadmin wird werwendet';
 $string['mailfrom_text'] = 'Mail Von: Name';
